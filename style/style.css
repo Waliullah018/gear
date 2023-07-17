@@ -1,0 +1,131 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+  margin: 0;
+  padding: 0;  
+}
+/*share style*/
+.title{
+    color: #3A3A3A;
+    font-size:2rem;
+    font-weight:700;
+}
+title1{
+    color: #3A3A3A;
+    font-size: 3.9rem;
+    font-weight: 800; 
+}
+.text{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    margin-top: 8px;
+}
+span{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*Share style end*/
+
+.describe{
+    width: 350px;
+    font-size: 0.7rem;
+    border: 1px solid gray;
+}
+.banner{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 164px auto;
+}
+nav .product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+.product >ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul li {
+    list-style:none;
+    margin-right: 40px;
+
+}
+li a{
+    text-decoration: none;
+}
+
+.banner-sponser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin:0 auto;
+
+}
+.collection-container{
+    padding-top: 10px;
+    max-width: 920px;
+    margin: 0 auto;
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    box-shadow: 1px 1px 1px rgba(232, 227, 227, 0.848);
+}
+.collection{
+    padding: 10px 10px;
+    background-color: #FFF;
+}
+.collection img{
+    width: 100%;
+    border-radius: 5px;
+}
+.flex-describe{
+    width: 50%;
+    font-size: 10px;
+}
+
+
+/*Small Device*/
+@media screen and (max-width:576px){
+    nav .product, .banner{
+        flex-direction: column;
+    }
+    ul li{
+        
+        margin: 7px;
+    }
+    .text{
+        font-size: 0.9rem;
+    }
+    .banner-sponser{
+       
+    }
+    .collection-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (min-width:577px) and (max-width:960px) {
+    nav .product{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
